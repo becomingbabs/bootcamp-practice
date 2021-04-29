@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h1>
+            Application to be a superhero or villain. 
+        </h1>
+
+        <label>
+            Name:
+        </label>
+        <input type="text" name="name" placeholder="Jane">
+
+        <label>
+            Last Name: 
+        </label>
+        <input type="text" name="last-name" placeholder="Doe">
+           
+            <br>
+            <br>
+
+        <label>
+            Email: 
+        </label>
+        <input type="email" name="email" placeholder="youremail@gmail.com">
+
+            <br>
+            <br>
+
+        <label>
+            Phone: 
+        </label>
+        <input type="number" name="phone" placeholder="569 1234 5678">
+
+            <br>
+            <br>
+
+        <label>
+            Civil Status: 
+        </label>
+            <br>
+        <label>Single</label>
+        <input type="radio" name="civil-status">
+        <label>In a relationship</label>
+        <input type="radio" name="civil-status">
+
+            <br>
+            <br>
+
+        <label>
+            Which position are you leaning more towards: 
+        </label>
+            <br>
+        <label>superhero</label>
+        <input type="radio" name="position">
+        <label>villain</label>
+        <input type="radio" name="position">
+        <label>neither...loner</label>
+        <input type="radio" name="position">
+
+            <br>
+            <br>
+
+        <label>
+            Birthday: 
+        </label>
+        <input type="date" name="birthday">
+
+            <br>
+            <br>
+
+        <label for="alignment">
+            Alignment: 
+        </label>
+        <select name="alignment" id="alignment" required>
+            <option value="good">good</option>
+            <option value="bad">
+                bad
+            </option>
+            <option value="evil">
+                evil 
+            </option>
+            <option value="neutral">
+                neutral 
+            </option>
+            <option value="independent">
+                independent 
+            </option>
+            <option value="I don't care">
+                I don't care
+            </option>
+            <option value="other">
+                other
+            </option>
+        </select>
+
+            <br>
+            <br>
+
+        <label>
+            Why do you want to become a superhero or a villain?
+            (You can choose more than one)
+        </label>
+            <br>
+        <input type="checkbox" name="reason1" id="reason1">
+        <label for="reason1">I want to help people.</label>
+        <br>
+        <input type="checkbox" name="reason2" id="reason2">
+        <label for="reason2">I want to be famous.</label>
+        <br>
+        <input type="checkbox" name="reason3" id="reason3">
+        <label for="reason3">I want to put my powers to good use.</label>
+        <br>
+        <input type="checkbox" name="reason4" id="reason4">
+        <label for="reason4">I want to show off what I can do.</label>
+        <br>
+        <input type="checkbox" name="reason5" id="reason5">
+        <label for="reason5">I want to have fun.</label>
+        <br>
+        <input type="checkbox" name="reason6" id="reason6">
+        <label for="reason6">I want to destroy the world.</label>
+        <br>
+        <input type="checkbox" name="reason7" id="reason7">
+        <label for="reason7">I want to cause chaos.</label>
+        <br>
+        <input type="checkbox" name="reason8" id="reason8">
+        <label for="reason8">I hate people.</label>
+        <br>
+        <input type="checkbox" name="reason9" id="reason9">
+        <label for="reason9">I want revenge.</label>
+        <br>
+        <input type="checkbox" name="reason10" id="reason10">
+        <label for="reason10">Other...</label>
+
+            <br>
+            <br>
+
+        <button type="submit" value="submit">Submit</button>
+
+    </form>
+</body>
+</html>
