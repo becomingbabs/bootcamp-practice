@@ -22,6 +22,11 @@ img {
 
 ul {
     list-style-type: none;
-    font-size: 20px; 
-    color: #380202;
+    font-size: 22px; 
+    color: #380202; 
+    width: 300px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    text-align: left; 
 }
+
