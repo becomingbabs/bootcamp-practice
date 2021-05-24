@@ -45,8 +45,16 @@ const sumNoFunctions = (numbers) => {
     if (numbers.length === 0) {
         return 0;
       } else {
-        return numbers[0] + sum(numbers.slice(1));
+        return numbers[0] + sumNoFunctions(numbers.slice(1));
       }
 }
 
-console.log(sumNoFunctions([3, 2, 1, 4])); 
+console.log(sumNoFunctions([3, 2, 1, 4]));
+
+// 
+
+const absArrayNumbers = (numbers) => {
+  return numbers.map(abs);
+}
+
+console.log(absArrayNumbers([1, -6, 0]));
