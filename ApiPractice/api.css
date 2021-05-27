@@ -55,10 +55,11 @@ html, body {
 }
 
 #gallery {
-    width: 960px;
+    text-align: center; 
+    width: 980px;
     margin: auto;
     overflow-y: scroll;
-    max-height: 100vh;
+    height: 100%;
     border: 1px solid #3B3B3B; 
     background: #1A1A1A; 
 }

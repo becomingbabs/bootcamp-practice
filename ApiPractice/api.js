@@ -10,11 +10,13 @@ let page = 1;
 const gallery = document.getElementById('gallery');
 const button = document.querySelector(".search-button"); 
 
+
 const renderImage = (photo) => {
     const newImage = document.createElement('img');
     newImage.className = 'imagen';
     newImage.src = photo.urls.regular;
     gallery.appendChild(newImage);
+    button.disabled = false; 
 }
 
 const fetchImages = (keyword) => {
@@ -22,19 +24,22 @@ const fetchImages = (keyword) => {
         // Bloqueamos la request para que no siga pidiendo datos 
         // si el usuario sigue scrolleando mientra esperamos la respuesta:
         allowRequest = false;
+        button.disabled = true;
+         
 
         // Pedimos los datos
         fetch(`${api}/search/photos?client_id=${accessKey}&page=${page}&per_page=30&query=${keyword}`)
         .then(response => response.json())
         .then(data => {
             // Siguiente página:
+            console.log(data.results);
             page++;
 
             // Ya obtuvimos respuesta, desbloqueamos la request:
             allowRequest = true;
             
             // Renderizamos cada imagen:
-            data.forEach(element => {
+            data.results.forEach(element => {
                 renderImage(element);
             });
         })
@@ -45,8 +50,8 @@ const fetchImages = (keyword) => {
 const wordEntered = (event) => {
     event.preventDefault();  
     let keyword = document.querySelector("#photo-search").value;  
-
-  fetchImages(keyword);
+    gallery.innerHTML = ' ';
+    fetchImages(keyword);
 }
 
 const scrolled = (e) => {
