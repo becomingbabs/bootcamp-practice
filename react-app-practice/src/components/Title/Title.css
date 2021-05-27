@@ -1,0 +1,16 @@
+.page-title {
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.title-text {
+    font-size: 30px; 
+    background-color: #1A1A1A;
+    background-image: linear-gradient(to right, #EEB73D 20%, #5BB176 65%, #6577BA 15%); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}

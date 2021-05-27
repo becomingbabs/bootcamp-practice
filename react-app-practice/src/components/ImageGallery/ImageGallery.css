@@ -1,0 +1,20 @@
+.Photos {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    text-align: center;
+    margin: 10px auto 50px auto;
+    padding: 15px; 
+    border: 1px solid #3B3B3B; 
+    background: #1A1A1A; 
+}
+
+
+.Photos img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
